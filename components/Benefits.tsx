@@ -6,28 +6,28 @@ const pillars = [
     title: "Colágeno verificado pra firmeza e glow.",
     body: "5g de colágeno hidrolisado Verisol® + biotina + ácido hialurônico. Pele firme, hidratada e com aquele brilho que filtro nenhum entrega.",
     img: "https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?w=900&q=80&auto=format&fit=crop",
-    bg: "#fbe1dc",
+    bg: "#ffe2ed",
   },
   {
     eyebrow: "energia leve",
     title: "Disposição sem o crash do café.",
     body: "Vitamina B12 + ferro + magnésio numa dose que te tira do modo cansaço. Energia limpa que dura a tarde toda.",
     img: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=900&q=80&auto=format&fit=crop",
-    bg: "#f7adac",
+    bg: "#fab8cd",
   },
   {
     eyebrow: "imunidade em flor",
     title: "12 vitaminas que blindam seu dia.",
     body: "Vitamina C, D, E, zinco e selênio em doses ativas. O combo certo pra atravessar a semana sem cair em pé.",
     img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=900&q=80&auto=format&fit=crop",
-    bg: "#fbb3b3",
+    bg: "#f592b2",
   },
   {
     eyebrow: "calma desperta",
     title: "Foco com leveza, sem ansiedade.",
     body: "Adaptógenos como ashwagandha e rhodiola ajudam o corpo a lidar com estresse. Sua mente abre espaço pra pensar.",
     img: "https://images.unsplash.com/photo-1517824806704-9040b037703b?w=900&q=80&auto=format&fit=crop",
-    bg: "#5d1f15",
+    bg: "#5c0d27",
   },
 ];
 

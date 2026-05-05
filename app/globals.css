@@ -8,8 +8,8 @@
 }
 
 html, body {
-  background-color: #fdfaf3;
-  color: #3a120a;
+  background-color: #fffbf6;
+  color: #5c0d27;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -17,13 +17,13 @@ html, body {
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-bloom-600 px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream-50 shadow-lg shadow-bloom-600/25 transition hover:bg-bloom-700 active:scale-[.98];
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-bloom-600 px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-cream-50 shadow-lg shadow-bloom-600/30 transition hover:bg-bloom-700 active:scale-[.98];
   }
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-bloom-600/40 px-5 py-2.5 text-sm font-semibold text-bloom-700 transition hover:bg-bloom-600 hover:text-cream-50;
   }
   .pill {
-    @apply inline-flex items-center gap-1.5 rounded-full border border-bloom-600/20 bg-cream-100 px-3 py-1 text-xs font-medium text-bloom-700;
+    @apply inline-flex items-center gap-1.5 rounded-full border border-bloom-600/15 bg-cream-100 px-3 py-1 text-xs font-medium text-bloom-700;
   }
   .container-x {
     @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
@@ -33,16 +33,16 @@ html, body {
   }
 }
 
-/* Soft grain background for hero/founder sections */
+/* Soft rose grain background */
 .grain {
   background-image: radial-gradient(
-      circle at 20% 30%,
-      rgba(228, 110, 88, 0.12),
-      transparent 50%
+      circle at 18% 28%,
+      rgba(255, 149, 184, 0.18),
+      transparent 55%
     ),
     radial-gradient(
-      circle at 80% 70%,
-      rgba(247, 173, 172, 0.18),
-      transparent 55%
+      circle at 82% 72%,
+      rgba(250, 184, 205, 0.22),
+      transparent 60%
     );
 }

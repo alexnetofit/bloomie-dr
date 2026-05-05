@@ -6,21 +6,21 @@ const steps = [
     title: "abre 1 sachê",
     body: "Cada sachê tem 7g — todos os 25+ ativos numa única dose, na medida certa.",
     img: "/products/stick.png",
-    bg: "#fbe1dc",
+    bg: "#ffe2ed",
   },
   {
     n: "02",
     title: "200ml de água gelada",
     body: "Pode ser também no suco, no smoothie ou no leite vegetal. A escolha é sua.",
     img: "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=900&q=80&auto=format&fit=crop",
-    bg: "#f7adac",
+    bg: "#fab8cd",
   },
   {
     n: "03",
     title: "mexe e bebe",
     body: "Tome de manhã em jejum pra absorção máxima. Repita amanhã. Floresça.",
     img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=900&q=80&auto=format&fit=crop",
-    bg: "#fbb3b3",
+    bg: "#f592b2",
   },
 ];
 

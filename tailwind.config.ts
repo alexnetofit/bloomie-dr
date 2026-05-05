@@ -8,40 +8,40 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Bloomie palette — coral red lifted from the pouch
+        // Bloomie palette — rose / cherry blossom, sem notas marrons
         bloom: {
-          50: "#fdf3f1",
-          100: "#fbe1dc",
-          200: "#f6c2b8",
-          300: "#ee9c8d",
-          400: "#e36e58",
-          500: "#d4482f",
-          600: "#bc3823",
-          700: "#9d2c1b",
-          800: "#7e2517",
-          900: "#5d1f15",
-          950: "#3a120a",
+          50: "#fff5f8",
+          100: "#ffe2ed",
+          200: "#ffc1d6",
+          300: "#ff95b8",
+          400: "#f6648f",
+          500: "#ea3b6e",
+          600: "#d12158",
+          700: "#ab1a47",
+          800: "#841338",
+          900: "#5c0d27",
+          950: "#34061a",
         },
-        // Off-white cream from the pouch background
+        // Cream marfim — pra fundo e wordmark sobre vermelho
         cream: {
-          50: "#fdfaf3",
-          100: "#f9f0dd",
-          200: "#f3e1bb",
-          300: "#ead08a",
+          50: "#fffbf6",
+          100: "#fdf2e2",
+          200: "#f8e3c5",
+          300: "#eecf95",
         },
-        // Rose petals on the pack
+        // Rosa pétala (soft)
         rose: {
-          100: "#fde6e6",
-          200: "#fbd0d0",
-          300: "#f7adac",
-          400: "#ee8585",
-          500: "#e15c5c",
+          100: "#ffeef3",
+          200: "#fdd7e2",
+          300: "#fab8cd",
+          400: "#f592b2",
+          500: "#ed6896",
         },
-        // Strawberry juicy accent
-        berry: {
-          200: "#fbb3b3",
-          400: "#e64545",
-          600: "#b22424",
+        // Vermelho cereja vibrante (acentos pop)
+        cherry: {
+          400: "#ff5478",
+          500: "#f0335c",
+          600: "#d11e4a",
         },
       },
       fontFamily: {

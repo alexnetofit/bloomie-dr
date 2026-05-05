@@ -10,7 +10,7 @@ const flavors = [
     tag: "best-seller",
     note: "morango + limão siciliano",
     img: "/products/stick.png",
-    bg: "#fbe1dc",
+    bg: "#ffe2ed",
   },
   {
     id: "hibisco",
@@ -18,7 +18,7 @@ const flavors = [
     tag: "novo sabor",
     note: "floral + adocicado",
     img: "/products/stick-hibisco.png",
-    bg: "#f7adac",
+    bg: "#fab8cd",
   },
   {
     id: "frutas-vermelhas",
@@ -26,7 +26,7 @@ const flavors = [
     tag: "vendendo rápido",
     note: "morango + framboesa + amora",
     img: "/products/stick-berry.png",
-    bg: "#fbb3b3",
+    bg: "#f592b2",
   },
 ];
 
@@ -79,11 +79,11 @@ export function BuyBox() {
       {/* floating petals */}
       <span
         aria-hidden
-        className="pointer-events-none absolute -left-10 top-20 h-40 w-40 rounded-full bg-rose-200 blur-3xl opacity-60"
+        className="pointer-events-none absolute -left-10 top-20 h-40 w-40 rounded-full bg-rose-300 blur-3xl opacity-50"
       />
       <span
         aria-hidden
-        className="pointer-events-none absolute right-0 top-40 h-56 w-56 rounded-full bg-bloom-200 blur-3xl opacity-50"
+        className="pointer-events-none absolute right-0 top-40 h-56 w-56 rounded-full bg-bloom-200 blur-3xl opacity-60"
       />
 
       <div className="container-x relative grid items-start gap-10 py-10 md:grid-cols-2 md:gap-14 md:py-16">
@@ -93,7 +93,7 @@ export function BuyBox() {
             <SmartImage
               src="/products/pouch.png"
               alt="Bloomie Pink Lemonade — caixinha com 30 sachês"
-              fallback="#fbe1dc"
+              fallback="#ffe2ed"
               priority
               className="aspect-square rounded-3xl"
             />
@@ -108,7 +108,7 @@ export function BuyBox() {
             <SmartImage
               src="/products/stick.png"
               alt="Sachê individual Bloomie"
-              fallback="#f7adac"
+              fallback="#fab8cd"
               className="aspect-square rounded-2xl"
             />
             <SmartImage

@@ -21,7 +21,7 @@ export function SmartImage({
   src,
   alt,
   className = "",
-  fallback = "#fbe1dc",
+  fallback = "#ffe2ed",
   priority,
   sizes = "(max-width: 768px) 100vw, 50vw",
 }: Props) {

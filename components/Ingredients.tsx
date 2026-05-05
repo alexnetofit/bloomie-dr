@@ -4,7 +4,7 @@ const groups = [
   {
     title: "Beleza & Pele",
     img: "https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb9?w=900&q=80&auto=format&fit=crop",
-    bg: "#fbe1dc",
+    bg: "#ffe2ed",
     items: [
       "colágeno Verisol® 5g",
       "ácido hialurônico",
@@ -16,7 +16,7 @@ const groups = [
   {
     title: "Energia & Foco",
     img: "https://images.unsplash.com/photo-1517242810446-cc8951b2be40?w=900&q=80&auto=format&fit=crop",
-    bg: "#f7adac",
+    bg: "#fab8cd",
     items: [
       "vitamina B12",
       "ferro quelato",
@@ -28,7 +28,7 @@ const groups = [
   {
     title: "Imunidade",
     img: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=900&q=80&auto=format&fit=crop",
-    bg: "#fbb3b3",
+    bg: "#f592b2",
     items: [
       "vitamina C 500mg",
       "vitamina D3",
@@ -40,13 +40,13 @@ const groups = [
   {
     title: "Calma & Equilíbrio",
     img: "https://images.unsplash.com/photo-1507868105-cce8a3a4f0e7?w=900&q=80&auto=format&fit=crop",
-    bg: "#5d1f15",
+    bg: "#5c0d27",
     items: ["ashwagandha", "rhodiola", "L-teanina", "maca peruana"],
   },
   {
     title: "Sabor & Acabamento",
     img: "https://images.unsplash.com/photo-1558857563-b371033873b8?w=900&q=80&auto=format&fit=crop",
-    bg: "#ee9c8d",
+    bg: "#ed6896",
     items: [
       "morango liofilizado",
       "limão siciliano",
@@ -57,7 +57,7 @@ const groups = [
   {
     title: "Bonus florido",
     img: "https://images.unsplash.com/photo-1518635017498-87f514b751ba?w=900&q=80&auto=format&fit=crop",
-    bg: "#bc3823",
+    bg: "#d12158",
     items: ["antioxidantes", "polifenóis", "fibras solúveis"],
   },
 ];

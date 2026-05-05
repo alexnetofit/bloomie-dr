@@ -7,7 +7,7 @@ export function Founder() {
         <SmartImage
           src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80&auto=format&fit=crop"
           alt="Helena, fundadora da Bloomie"
-          fallback="#fbe1dc"
+          fallback="#ffe2ed"
           className="aspect-[4/5] rounded-3xl"
         />
         <div>
