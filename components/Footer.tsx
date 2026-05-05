@@ -3,11 +3,10 @@ export function Footer() {
     <footer className="bg-bloom-950 text-cream-50">
       <div className="container-x grid gap-10 py-14 md:grid-cols-4">
         <div>
-          <span className="font-display text-2xl font-semibold">
-            bloomie<span className="text-bloom-300">.</span>
-          </span>
+          <span className="wordmark text-3xl !text-rose-200">Bloomie</span>
           <p className="mt-3 max-w-xs text-sm text-cream-50/70">
-            Suplemento de greens com 38 ativos pra quem quer florescer todo dia.
+            Pó pra preparo de bebida com 25+ ativos pra quem quer florescer
+            todo dia.
           </p>
         </div>
         <div>

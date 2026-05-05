@@ -1,20 +1,40 @@
 "use client";
 
 import { useState } from "react";
-import { Placeholder } from "./Placeholder";
+import { SmartImage } from "./SmartImage";
 
 const flavors = [
-  { id: "pineapple", label: "Abacaxi c/ Hortelã", tag: "best-seller", tone: "leaf" as const },
-  { id: "watermelon", label: "Melancia", tag: "vendendo rápido", tone: "peach" as const },
-  { id: "lemon", label: "Limão", tag: "estoque limitado", tone: "cream" as const },
-  { id: "mango", label: "Manga", tag: "novo sabor", tone: "peach" as const },
+  {
+    id: "pink-lemonade",
+    label: "Pink Lemonade",
+    tag: "best-seller",
+    note: "morango + limão siciliano",
+    img: "/products/stick.png",
+    bg: "#fbe1dc",
+  },
+  {
+    id: "hibisco",
+    label: "Hibisco & Lichia",
+    tag: "novo sabor",
+    note: "floral + adocicado",
+    img: "/products/stick-hibisco.png",
+    bg: "#f7adac",
+  },
+  {
+    id: "frutas-vermelhas",
+    label: "Frutas Vermelhas",
+    tag: "vendendo rápido",
+    note: "morango + framboesa + amora",
+    img: "/products/stick-berry.png",
+    bg: "#fbb3b3",
+  },
 ];
 
 const bundles = [
   {
     id: "single",
-    title: "1 pote",
-    sub: "30 doses · 1 mês",
+    title: "1 caixinha",
+    sub: "30 sachês · 1 mês",
     price: 197.9,
     crossed: 247.9,
     pillar: "experimentar",
@@ -22,8 +42,8 @@ const bundles = [
   },
   {
     id: "duo",
-    title: "2 potes",
-    sub: "60 doses · 2 meses",
+    title: "2 caixinhas",
+    sub: "60 sachês · 2 meses",
     price: 339.8,
     crossed: 395.8,
     pillar: "casal de besties",
@@ -31,8 +51,8 @@ const bundles = [
   },
   {
     id: "trio",
-    title: "3 potes",
-    sub: "90 doses · 3 meses",
+    title: "3 caixinhas",
+    sub: "90 sachês · 3 meses",
     price: 444.9,
     crossed: 593.7,
     pillar: "ritual completo",
@@ -49,75 +69,117 @@ export function BuyBox() {
   const [bundle, setBundle] = useState(bundles[2].id);
 
   const selected = bundles.find((b) => b.id === bundle)!;
+  const selectedFlavor = flavors.find((f) => f.id === flavor)!;
 
   return (
-    <section id="produto" className="bg-cream-50">
-      <div className="container-x grid items-start gap-10 py-10 md:grid-cols-2 md:gap-14 md:py-16">
+    <section
+      id="produto"
+      className="grain relative overflow-hidden bg-cream-50"
+    >
+      {/* floating petals */}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute -left-10 top-20 h-40 w-40 rounded-full bg-rose-200 blur-3xl opacity-60"
+      />
+      <span
+        aria-hidden
+        className="pointer-events-none absolute right-0 top-40 h-56 w-56 rounded-full bg-bloom-200 blur-3xl opacity-50"
+      />
+
+      <div className="container-x relative grid items-start gap-10 py-10 md:grid-cols-2 md:gap-14 md:py-16">
         {/* gallery */}
         <div className="grid gap-3">
-          <Placeholder
-            label="Foto do pote Bloomie"
-            tone="leaf"
-            className="aspect-square rounded-3xl"
-          />
+          <div className="relative">
+            <SmartImage
+              src="/products/pouch.png"
+              alt="Bloomie Pink Lemonade — caixinha com 30 sachês"
+              fallback="#fbe1dc"
+              priority
+              className="aspect-square rounded-3xl"
+            />
+            <span className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-cream-50 px-3 py-1 text-xs font-semibold text-bloom-700 shadow-sm">
+              ⭐ 4.9 · 28.4k besties
+            </span>
+            <span className="absolute right-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-bloom-600 px-3 py-1 text-xs font-semibold text-cream-50 shadow-sm">
+              30% OFF
+            </span>
+          </div>
           <div className="grid grid-cols-4 gap-3">
-            {(["leaf", "cream", "peach", "deep"] as const).map((t, i) => (
-              <Placeholder
-                key={i}
-                tone={t}
-                label={`thumb ${i + 1}`}
-                className="aspect-square rounded-2xl"
-              />
-            ))}
+            <SmartImage
+              src="/products/stick.png"
+              alt="Sachê individual Bloomie"
+              fallback="#f7adac"
+              className="aspect-square rounded-2xl"
+            />
+            <SmartImage
+              src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80&auto=format&fit=crop"
+              alt="Bebida pink lemonade"
+              className="aspect-square rounded-2xl"
+            />
+            <SmartImage
+              src="https://images.unsplash.com/photo-1518635017498-87f514b751ba?w=600&q=80&auto=format&fit=crop"
+              alt="Morangos"
+              className="aspect-square rounded-2xl"
+            />
+            <SmartImage
+              src="https://images.unsplash.com/photo-1582176604856-e824b4736522?w=600&q=80&auto=format&fit=crop"
+              alt="Limão siciliano"
+              className="aspect-square rounded-2xl"
+            />
           </div>
         </div>
 
         {/* offer */}
         <div className="flex flex-col gap-6">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="pill">+38 ativos · 0 açúcar</span>
-            <span className="pill">vegano · sem glúten</span>
-            <span className="pill">⭐ 4.9 · 28.4k avaliações</span>
+            <span className="pill">sem glúten</span>
+            <span className="pill">sem lactose</span>
+            <span className="pill">0 açúcar adicionado</span>
+            <span className="pill">⭐ 4.9 · 28.4k</span>
           </div>
 
-          <h1 className="font-display text-4xl font-semibold leading-[1.05] text-bloom-950 md:text-5xl">
-            Bloomie<sup className="text-base">®</sup> — Suco verde em pó
-            <span className="block text-bloom-700">
-              que floresce sua rotina.
+          <h1 className="font-display text-4xl font-semibold leading-[1.05] text-bloom-900 md:text-5xl">
+            Viva seu momento
+            <span className="wordmark block text-5xl md:text-6xl">
+              Bloomie.
             </span>
           </h1>
 
           <p className="max-w-prose text-base text-bloom-900/75">
-            Tudo que seu intestino, sua pele e sua energia precisam num scoop só.
-            Tão gostoso que vira o melhor minuto do seu dia.
+            Pó pra preparo de bebida com sabor{" "}
+            <strong className="text-bloom-700">Pink Lemonade</strong> —
+            morango com limão siciliano e pétalas de rosa. Colágeno verificado,
+            12 vitaminas e adaptógenos num sachê de 7g pra abrir, mexer e
+            florescer.
           </p>
 
           {/* flavors */}
           <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-bloom-900/60">
-              escolha o sabor
+              escolha o sabor · {selectedFlavor.label}
             </p>
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            <div className="grid grid-cols-3 gap-2">
               {flavors.map((f) => (
                 <button
                   key={f.id}
                   onClick={() => setFlavor(f.id)}
                   className={`group relative overflow-hidden rounded-2xl border p-2 text-left transition ${
                     flavor === f.id
-                      ? "border-bloom-700 ring-2 ring-bloom-700/30"
-                      : "border-bloom-700/15 hover:border-bloom-700/40"
+                      ? "border-bloom-600 ring-2 ring-bloom-600/30"
+                      : "border-bloom-600/15 hover:border-bloom-600/40"
                   }`}
                 >
-                  <Placeholder
-                    label={f.label.split(" ")[0]}
-                    tone={f.tone}
+                  <SmartImage
+                    src={f.img}
+                    alt={f.label}
+                    fallback={f.bg}
                     className="aspect-square rounded-xl"
                   />
                   <div className="mt-2 px-1">
                     <p className="text-xs font-semibold text-bloom-900">
                       {f.label}
                     </p>
-                    <p className="text-[10px] uppercase tracking-wider text-bloom-700">
+                    <p className="text-[10px] uppercase tracking-wider text-bloom-600">
                       {f.tag}
                     </p>
                   </div>
@@ -138,12 +200,12 @@ export function BuyBox() {
                   onClick={() => setBundle(b.id)}
                   className={`relative flex items-center justify-between gap-3 rounded-2xl border p-4 text-left transition ${
                     bundle === b.id
-                      ? "border-bloom-700 bg-bloom-50 ring-2 ring-bloom-700/20"
-                      : "border-bloom-700/15 bg-white hover:border-bloom-700/40"
+                      ? "border-bloom-600 bg-bloom-50 ring-2 ring-bloom-600/20"
+                      : "border-bloom-600/15 bg-white hover:border-bloom-600/40"
                   }`}
                 >
                   {"featured" in b && b.featured && (
-                    <span className="absolute -top-2 left-4 rounded-full bg-bloom-700 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-cream-50">
+                    <span className="absolute -top-2 left-4 rounded-full bg-bloom-600 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-cream-50">
                       mais escolhido
                     </span>
                   )}
@@ -151,8 +213,8 @@ export function BuyBox() {
                     <span
                       className={`grid h-5 w-5 place-items-center rounded-full border-2 ${
                         bundle === b.id
-                          ? "border-bloom-700 bg-bloom-700"
-                          : "border-bloom-700/30"
+                          ? "border-bloom-600 bg-bloom-600"
+                          : "border-bloom-600/30"
                       }`}
                     >
                       {bundle === b.id && (
@@ -160,9 +222,9 @@ export function BuyBox() {
                       )}
                     </span>
                     <div>
-                      <p className="font-semibold text-bloom-950">
+                      <p className="font-semibold text-bloom-900">
                         {b.title}
-                        <span className="ml-2 text-xs font-medium text-bloom-700">
+                        <span className="ml-2 text-xs font-medium text-bloom-600">
                           {b.pillar}
                         </span>
                       </p>
@@ -171,11 +233,11 @@ export function BuyBox() {
                   </div>
                   <div className="text-right">
                     {b.discount && (
-                      <span className="mb-1 inline-block rounded-md bg-peach-300/40 px-1.5 py-0.5 text-[10px] font-bold text-bloom-900">
+                      <span className="mb-1 inline-block rounded-md bg-rose-200 px-1.5 py-0.5 text-[10px] font-bold text-bloom-800">
                         {b.discount}
                       </span>
                     )}
-                    <p className="text-sm font-bold text-bloom-950">
+                    <p className="text-sm font-bold text-bloom-900">
                       {brl(b.price)}
                     </p>
                     <p className="text-[10px] text-bloom-900/50 line-through">
@@ -188,13 +250,13 @@ export function BuyBox() {
           </div>
 
           {/* CTA */}
-          <div className="rounded-3xl border border-bloom-700/15 bg-white p-5 shadow-sm">
+          <div className="rounded-3xl border border-bloom-600/15 bg-white p-5 shadow-sm">
             <div className="flex items-end justify-between gap-4">
               <div>
-                <p className="text-xs uppercase tracking-wider text-bloom-700">
+                <p className="text-xs uppercase tracking-wider text-bloom-600">
                   você paga
                 </p>
-                <p className="font-display text-3xl font-semibold text-bloom-950">
+                <p className="font-display text-3xl font-semibold text-bloom-900">
                   {brl(selected.price)}
                 </p>
                 <p className="text-xs text-bloom-900/60">
@@ -214,13 +276,12 @@ export function BuyBox() {
             </p>
           </div>
 
-          {/* payment icons */}
           <div className="flex flex-wrap items-center gap-2 text-xs text-bloom-900/60">
             <span>aceita</span>
             {["Pix", "Visa", "Master", "Amex", "ApplePay", "GPay"].map((p) => (
               <span
                 key={p}
-                className="rounded-md border border-bloom-700/15 bg-white px-2 py-1 text-[10px] font-semibold text-bloom-900"
+                className="rounded-md border border-bloom-600/15 bg-white px-2 py-1 text-[10px] font-semibold text-bloom-900"
               >
                 {p}
               </span>

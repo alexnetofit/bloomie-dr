@@ -1,19 +1,20 @@
-import { Placeholder } from "./Placeholder";
+import { SmartImage } from "./SmartImage";
 
 export function Founder() {
   return (
-    <section className="bg-bloom-50 py-16 md:py-24">
+    <section className="grain bg-bloom-50 py-16 md:py-24">
       <div className="container-x grid items-center gap-10 md:grid-cols-2">
-        <Placeholder
-          tone="leaf"
-          label="Foto da fundadora"
+        <SmartImage
+          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80&auto=format&fit=crop"
+          alt="Helena, fundadora da Bloomie"
+          fallback="#fbe1dc"
           className="aspect-[4/5] rounded-3xl"
         />
         <div>
           <p className="pill">a história por trás</p>
-          <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-bloom-950 md:text-5xl">
-            “Eu queria um suco verde
-            <span className="text-bloom-700"> que eu lembrasse de tomar.”</span>
+          <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-bloom-900 md:text-5xl">
+            “Eu queria um colágeno
+            <span className="text-bloom-600"> que eu lembrasse de tomar.”</span>
           </h2>
           <div className="mt-6 space-y-4 text-bloom-900/75">
             <p>
@@ -23,11 +24,11 @@ export function Founder() {
               minha rotina.
             </p>
             <p>
-              Quando descobri que metade dos meus problemas (inchaço, queda de
-              cabelo, energia bipolar) vinham do intestino, virou obsessão
-              juntar tudo num produto só. Bloomie é o que eu sempre quis
+              Quando fiz 30, percebi que firmeza, energia e bom humor vinham
+              da soma de pequenas coisas. Bloomie é o que eu sempre quis
               comprar e nunca achei: completo, honesto e tão gostoso que vira
-              ritual.
+              ritual. O sachê é a cereja do bolo — cabe na bolsa, na nécessaire
+              e na vida real.
             </p>
             <p className="font-display text-xl italic text-bloom-700">
               — Helena Bloom, fundadora

@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Em quanto tempo eu sinto resultado?",
-    a: "A maioria das nossas besties relata digestão mais regulada e barriga menos inchada já na primeira semana. Pele, cabelo e unha pedem entre 30 e 60 dias — é o tempo do ciclo natural de renovação celular.",
+    a: "A maioria das nossas besties relata mais energia e disposição já na primeira semana. Pele, cabelo e unha pedem entre 30 e 60 dias — é o tempo do ciclo natural de renovação celular.",
   },
   {
     q: "Posso tomar todo dia?",
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "Pode tomar grávida ou amamentando?",
-    a: "Bloomie é um suplemento alimentar com vitaminas e minerais. Recomendamos consultar seu obstetra antes — ele conhece sua rotina e exames.",
+    a: "Bloomie é um suplemento alimentar com vitaminas, minerais e colágeno. Recomendamos consultar seu obstetra antes — ele conhece sua rotina e exames.",
   },
   {
     q: "Como funciona a garantia de 30 dias?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "Tem açúcar ou adoçante artificial?",
-    a: "Zero açúcar adicionado e zero adoçante artificial. O dulçor vem da fruta liofilizada (abacaxi, melancia, limão ou manga) e de uma pitadinha de stévia natural.",
+    a: "Zero açúcar adicionado e zero adoçante artificial. O dulçor natural vem das frutas liofilizadas (morango, limão siciliano, hibisco) e de uma pitadinha de stévia.",
   },
 ];
 
@@ -36,7 +36,7 @@ export function FAQ() {
       <div className="container-x grid gap-10 md:grid-cols-[1fr_1.4fr]">
         <div>
           <p className="pill">dúvidas frequentes</p>
-          <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-bloom-950 md:text-5xl">
+          <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-bloom-900 md:text-5xl">
             A gente já respondeu.
           </h2>
           <p className="mt-3 text-bloom-900/70">
@@ -53,13 +53,13 @@ export function FAQ() {
             return (
               <div
                 key={f.q}
-                className="overflow-hidden rounded-2xl border border-bloom-700/10 bg-white"
+                className="overflow-hidden rounded-2xl border border-bloom-600/10 bg-white"
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                 >
-                  <span className="font-medium text-bloom-950">{f.q}</span>
+                  <span className="font-medium text-bloom-900">{f.q}</span>
                   <span
                     className={`grid h-7 w-7 shrink-0 place-items-center rounded-full bg-bloom-50 text-bloom-700 transition ${
                       isOpen ? "rotate-45" : ""

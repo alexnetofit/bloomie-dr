@@ -25,15 +25,17 @@ export function CountdownBanner() {
   const s = Math.floor((diff % 60_000) / 1000);
 
   return (
-    <div className="bg-bloom-900 text-cream-50">
+    <div className="bg-bloom-700 text-cream-50">
       <div className="container-x flex flex-wrap items-center justify-center gap-x-6 gap-y-1 py-2 text-xs">
-        <span className="font-medium">🌱 só hoje · 35% OFF no kit floração</span>
-        <span className="opacity-70">·</span>
-        <span className="font-medium">🚚 frete grátis a partir de R$199</span>
-        <span className="opacity-70">·</span>
+        <span className="font-medium">
+          🌸 só hoje · 30% OFF no kit Pink Lemonade
+        </span>
+        <span className="opacity-60">·</span>
+        <span className="font-medium">🚚 frete grátis acima de R$199</span>
+        <span className="opacity-60">·</span>
         <span className="flex items-center gap-1.5">
           <span className="opacity-80">a promoção encerra em</span>
-          <span className="rounded-md bg-cream-50/10 px-1.5 py-0.5 font-mono tabular-nums">
+          <span className="rounded-md bg-cream-50/15 px-1.5 py-0.5 font-mono tabular-nums">
             {pad(h)}:{pad(m)}:{pad(s)}
           </span>
         </span>
