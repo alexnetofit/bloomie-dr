@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bloomie® — Pink Lemonade · Pó pra preparo de bebida",
+  title:
+    "Bloomie® — Suco verde em pó com 36+ greens & superfoods · Pink Lemonade",
   description:
-    "Bloomie é o ritual diário pra firmeza, energia e bom humor. Sachê de 7g com colágeno Verisol®, 12 vitaminas e adaptógenos — sabor Pink Lemonade.",
+    "Bloomie é o suco verde natural em pó, agora em sachê. 36+ ativos, 13 vitaminas, 10 minerais e 17 superfoods pra digestão leve, energia e zero inchaço.",
   openGraph: {
     title: "Bloomie® — Viva seu momento Bloomie.",
     description:
-      "Pó pra preparo de bebida com 25+ ativos. Pele firme, energia leve, mente calma — em 1 sachê por dia.",
+      "Suco verde em sachê com 36+ ativos. Digestão, energia e pele que floresce — em 7g por dia.",
   },
 };
 

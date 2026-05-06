@@ -1,11 +1,11 @@
 const items = [
-  "30 sachês · 7g cada",
+  "+36 ativos por dose",
+  "13 vitaminas",
+  "10 minerais",
+  "17 superfoods",
   "0 açúcar adicionado",
-  "sem glúten",
-  "sem lactose",
-  "feito no Brasil",
-  "testado em laboratório",
-  "+12 vitaminas",
+  "sem glúten · sem lactose",
+  "30 sachês · 7g cada",
   "30 dias de garantia",
 ];
 

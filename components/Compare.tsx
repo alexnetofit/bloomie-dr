@@ -1,12 +1,12 @@
 const rows = [
-  { feature: "25+ ativos por dose", us: true, them: false },
+  { feature: "+36 ativos por dose", us: true, them: false },
+  { feature: "13 vitaminas + 10 minerais", us: true, them: "parcial" },
+  { feature: "17 superfoods", us: true, them: false },
+  { feature: "fibras prebióticas + adaptógenos", us: true, them: false },
   { feature: "0 açúcar adicionado", us: true, them: "às vezes" },
-  { feature: "colágeno Verisol® verificado", us: true, them: false },
-  { feature: "adaptógenos em dose ativa", us: true, them: false },
   { feature: "sachê pra levar pra qualquer lugar", us: true, them: false },
   { feature: "sabor que dá gosto de tomar", us: true, them: false },
   { feature: "30 dias de garantia", us: true, them: "raramente" },
-  { feature: "transparência de fórmula", us: true, them: false },
 ];
 
 function Mark({ v }: { v: boolean | string }) {

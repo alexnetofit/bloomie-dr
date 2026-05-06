@@ -13,8 +13,8 @@ export function Founder() {
         <div>
           <p className="pill">a história por trás</p>
           <h2 className="mt-4 font-display text-4xl font-semibold leading-tight text-bloom-900 md:text-5xl">
-            “Eu queria um colágeno
-            <span className="text-bloom-600"> que eu lembrasse de tomar.”</span>
+            “A Bloomie resolveu minha
+            <span className="text-bloom-600"> guerra contra o intestino.”</span>
           </h2>
           <div className="mt-6 space-y-4 text-bloom-900/75">
             <p>
@@ -24,11 +24,12 @@ export function Founder() {
               minha rotina.
             </p>
             <p>
-              Quando fiz 30, percebi que firmeza, energia e bom humor vinham
-              da soma de pequenas coisas. Bloomie é o que eu sempre quis
-              comprar e nunca achei: completo, honesto e tão gostoso que vira
-              ritual. O sachê é a cereja do bolo — cabe na bolsa, na nécessaire
-              e na vida real.
+              Quando descobri que metade dos meus problemas (inchaço, queda de
+              cabelo, energia bipolar) vinha do intestino, virou obsessão
+              juntar tudo num produto só. Bloomie é o que eu sempre quis
+              comprar e nunca achei: 36+ ativos, completo, honesto e tão
+              gostoso que vira ritual. O sachê é a cereja do bolo — cabe na
+              bolsa, na nécessaire e na vida real.
             </p>
             <p className="font-display text-xl italic text-bloom-700">
               — Helena Bloom, fundadora

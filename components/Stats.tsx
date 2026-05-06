@@ -1,8 +1,8 @@
 const stats = [
-  { value: "91%", label: "tomam 4–6x por semana sem esquecer" },
-  { value: "76%", label: "se sentem mais leves em até 5 dias" },
-  { value: "68%", label: "notam pele mais firme em 30 dias" },
-  { value: "59%", label: "relatam mais energia e menos cansaço" },
+  { value: "88%", label: "tomam 4–6x por semana sem esquecer" },
+  { value: "73%", label: "se sentem mais leves em até 5 dias" },
+  { value: "65%", label: "relatam digestão regulada em 14 dias" },
+  { value: "56%", label: "notam pele, unha, cabelo e energia melhores" },
 ];
 
 export function Stats() {
@@ -18,7 +18,7 @@ export function Stats() {
           </p>
           <h2 className="mt-4 font-display text-4xl font-semibold md:text-5xl">
             Os números das nossas
-            <span className="text-rose-300"> +90.000 besties.</span>
+            <span className="text-rose-300"> +80.000 besties.</span>
           </h2>
           <p className="mt-3 text-cream-50/70">
             Pesquisa interna com 4.218 clientes ativas, jan/2026.

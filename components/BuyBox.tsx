@@ -132,9 +132,9 @@ export function BuyBox() {
         {/* offer */}
         <div className="flex flex-col gap-6">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="pill">sem glúten</span>
-            <span className="pill">sem lactose</span>
-            <span className="pill">0 açúcar adicionado</span>
+            <span className="pill">+36 ativos</span>
+            <span className="pill">sem glúten · sem lactose</span>
+            <span className="pill">0 açúcar</span>
             <span className="pill">⭐ 4.9 · 28.4k</span>
           </div>
 
@@ -146,11 +146,10 @@ export function BuyBox() {
           </h1>
 
           <p className="max-w-prose text-base text-bloom-900/75">
-            Pó pra preparo de bebida com sabor{" "}
-            <strong className="text-bloom-700">Pink Lemonade</strong> —
-            morango com limão siciliano e pétalas de rosa. Colágeno verificado,
-            12 vitaminas e adaptógenos num sachê de 7g pra abrir, mexer e
-            florescer.
+            Suco verde natural em pó, agora em sachê e com sabor{" "}
+            <strong className="text-bloom-700">Pink Lemonade</strong>. 36+
+            greens & superfoods, 13 vitaminas e 10 minerais pra digestão leve,
+            energia e zero inchaço. Tão gostoso que você vai lembrar de tomar.
           </p>
 
           {/* flavors */}

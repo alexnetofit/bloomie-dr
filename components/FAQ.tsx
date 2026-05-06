@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Em quanto tempo eu sinto resultado?",
-    a: "A maioria das nossas besties relata mais energia e disposição já na primeira semana. Pele, cabelo e unha pedem entre 30 e 60 dias — é o tempo do ciclo natural de renovação celular.",
+    a: "A maioria das nossas besties relata digestão mais regulada e barriga menos inchada já na primeira semana. Pele, cabelo, unha e energia pedem entre 30 e 60 dias — é o tempo do ciclo natural de renovação celular.",
   },
   {
     q: "Posso tomar todo dia?",
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "Pode tomar grávida ou amamentando?",
-    a: "Bloomie é um suplemento alimentar com vitaminas, minerais e colágeno. Recomendamos consultar seu obstetra antes — ele conhece sua rotina e exames.",
+    a: "Bloomie é um suplemento alimentar com greens, vitaminas e minerais. Recomendamos consultar seu obstetra antes — ele conhece sua rotina e exames.",
   },
   {
     q: "Como funciona a garantia de 30 dias?",

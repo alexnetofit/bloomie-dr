@@ -4,7 +4,7 @@ const steps = [
   {
     n: "01",
     title: "abre 1 sachê",
-    body: "Cada sachê tem 7g — todos os 25+ ativos numa única dose, na medida certa.",
+    body: "Cada sachê tem 7g — todos os 36+ ativos numa única dose, na medida certa.",
     img: "/products/stick.png",
     bg: "#ffe2ed",
   },

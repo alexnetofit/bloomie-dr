@@ -4,7 +4,7 @@ const reviews = [
   {
     name: "Rebeca P.",
     handle: "@rebec.p",
-    text: "Tomo todo dia em jejum. Em 1 semana minha pele ficou visivelmente mais firme — e o sabor de Pink Lemonade é absurdo de gostoso.",
+    text: "Tomo todo dia em jejum. Em 1 semana minha digestão virou outra coisa — e o sabor Pink Lemonade é simplesmente uma delícia.",
     sabor: "Pink Lemonade",
     avatar:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80&auto=format&fit=crop",
@@ -12,7 +12,7 @@ const reviews = [
   {
     name: "Amanda V.",
     handle: "@amanda.viit",
-    text: "Já tentei mil colágenos e parava na 2ª semana. Bloomie eu lembro porque é o momentinho gostoso do dia.",
+    text: "Já tentei mil greens e parava na 2ª semana. Bloomie eu lembro porque é o momentinho gostoso do dia. Intestino funcionando direitinho.",
     sabor: "Pink Lemonade",
     avatar:
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80&auto=format&fit=crop",
@@ -20,7 +20,7 @@ const reviews = [
   {
     name: "Júlia M.",
     handle: "@juhmoreirah",
-    text: "Foi a única coisa que tirou meu cansaço da tarde. Recomendei pra minha mãe e pra minha irmã.",
+    text: "Foi a única coisa que tirou meu inchaço pré-menstrual. Tô recomendando pra minha mãe, minha irmã e até pro meu chefe.",
     sabor: "Hibisco & Lichia",
     avatar:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&q=80&auto=format&fit=crop",
@@ -36,7 +36,7 @@ const reviews = [
   {
     name: "Marina S.",
     handle: "@marinasouza",
-    text: "Sachê é gênio. Levo na bolsa, no avião, no escritório, e mantenho a rotina. Cabelo crescendo mais forte também.",
+    text: "Praticidade absurda. Sachê cabe na bolsa, levo pra viagem, pro escritório. Cabelo crescendo mais forte e pele firme depois de 30 dias.",
     sabor: "Pink Lemonade",
     avatar:
       "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&q=80&auto=format&fit=crop",
@@ -44,7 +44,7 @@ const reviews = [
   {
     name: "Bia C.",
     handle: "@biacarvalho",
-    text: "Custa o preço de 3 cafés por semana e me entrega o que minha vitamina manipulada não dava. Não largo mais.",
+    text: "36 ativos por R$6/dia. Custa o preço de 3 cafés por semana e me entrega o que minha vitamina manipulada não dava. Não largo mais.",
     sabor: "Hibisco & Lichia",
     avatar:
       "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=300&q=80&auto=format&fit=crop",
